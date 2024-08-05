@@ -37779,3 +37779,5 @@
     /******/ }
     ]);
     //# sourceMappingURL=auth.5e3cbe586f6425f798d8.js.map
+
+    document.dispatchEvent(new CustomEvent('saveArticleLogiIn'));
