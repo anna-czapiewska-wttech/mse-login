@@ -21715,6 +21715,8 @@
         // event for saving article when user is authenticated and no redirect url is set
         if (!redirectUrl && authStatus === 'authenticated' && route === 'signIn') {
           document.dispatchEvent(new CustomEvent('saveArticleLogiIn'));
+          console.log('saveArticleLogiIn');
+          alert('saveArticleLogiIn');
         }
         if (!redirectUrl && authStatus === 'authenticated' && route === 'authenticated') {
           document.dispatchEvent(new CustomEvent('saveArticleSignUp'));
