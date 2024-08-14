@@ -23,6 +23,34 @@
     }
 }
 
+.box.login-form-container>.component-content>.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 991px) {
+        grid-template-rows: auto auto;
+    }
+}
+
+.box.login-form-container>.component-content>.content>.login-form {
+    grid-column-start: 2; /* The start line for the grid item */
+  grid-column-end: 3;   /* The end line for the grid item */
+  
+    @media screen and (max-width: 991px) {
+        grid-row: 1;
+    }
+}
+
+.box.login-form-container>.component-content>.content>.login-form-info.box.hide-on-mobile-and-tablet {
+    grid-column-start: 1; /* The start line for the grid item */
+  grid-column-end: 2;   /* The end line for the grid item */
+
+  @media screen and (max-width: 991px) {
+        grid-row: 2;
+    }
+}
+
+
 .box.login-form>.component-content {
     padding: 30px 40px;
 
@@ -91,6 +119,7 @@
 }
 
 .box.login-form-info {
+
     h1,
     h2,
     h3,
