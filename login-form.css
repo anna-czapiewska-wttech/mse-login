@@ -10,6 +10,19 @@
     }
 }
 
+.auth {
+    width: 100%;
+    float: left;
+
+    @media screen and (max-width: 991px) {
+        padding: 0 8px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 0;
+    }
+}
+
 .box.login-form>.component-content {
     padding: 30px 40px;
 
@@ -37,6 +50,16 @@
             margin-bottom: 6px;
         }
     }
+
+    [data-amplify-authenticator] {
+        @media screen and (max-width: 991px) {
+            padding: 0;
+        }
+
+        [data-amplify-form] {
+            padding: 16px;
+        }
+    }
 }
 
 .box.login-form-info {
@@ -52,18 +75,18 @@
 
 .box.login-form-info>.component-content {
     background-color: #fff;
-    padding: 40px;
+    padding: 30px 40px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     position: relative;
 
     @media screen and (max-width: 991px) {
         border-top-right-radius: 8px;
-        padding: 16px 40px;
+        padding: 16px 40px 0 40px;
     }
 
     @media screen and (max-width: 767px) {
-        padding: 16px;
+        padding: 8px 16px 0 16px;
     }
 }
 
