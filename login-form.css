@@ -1,9 +1,14 @@
-/* 54px: 54px;
-640px: 640px;
-640pxSignUp: 785px;
-640pxTablet: 54px;
-8px: 8px;
-8px: 8px; */
+.box.hide-on-mobile-and-tablet {
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+.box.hide-on-desktop {
+    @media screen and (min-width: 992px) {
+        display: none;
+    }
+}
 
 .box.login-form>.component-content {
     padding: 30px 40px;
@@ -34,7 +39,7 @@
     }
 }
 
-.box.login-form-info:not(.cq-Editable-dom) {
+.box.login-form-info {
     .richText {
         display: none;
         /* hide richText before react app init */
@@ -52,25 +57,17 @@
     border-bottom-left-radius: 8px;
     position: relative;
 
-    .richTex.cq-Editable-dom {
-        background-color: #273157;
-    }
-
     @media screen and (max-width: 991px) {
-        background-color: #fff;
         border-top-right-radius: 8px;
         padding: 16px 40px;
     }
-
 
     @media screen and (max-width: 767px) {
         padding: 16px;
     }
 }
 
-
 .box.login-form-info {
-
     h1,
     h2,
     h3,
