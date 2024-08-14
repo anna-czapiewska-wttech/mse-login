@@ -1,0 +1,508 @@
+/* $backgroundImageWidth: 54px;
+$backgroundImageHeight: 640px;
+$backgroundImageHeightSignUp: 785px;
+$backgroundImageHeightTablet: 54px;
+$boxPadding: 8px;
+$borderRadius: 8px; */
+
+.box.login-form > .component-content {
+    padding-top: 30px;
+    padding-left: 69px;
+    padding-right: 78px;
+
+    [data-amplify-authenticator] [data-amplify-container] {
+        width: 100%;
+        max-width: none;
+
+        /* @include breakpoint(tablet) {
+            margin-bottom: 6px;
+        } */
+    }
+}
+
+/* .box.login-form {
+    & > .component-content {
+        height: $backgroundImageHeight;
+        overflow-y: auto;
+
+        @include breakpoint(tablet) {
+            padding-top: 14px;
+            padding-left: 115px;
+            padding-right: 115px;
+            height: auto;
+        }
+
+        @include breakpoint(mobile) {
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+    }
+
+    .loginComponent {
+        @include breakpoint(tablet) {
+            margin-bottom: 6px;
+        }
+    }
+
+   
+} */
+
+.box.login-form-info:not(.cq-Editable-dom) {
+    .richText {
+        display: none; 
+        /* hide richText before react app init */
+    }
+    .richText.visible-info {
+        display: initial;
+    }
+}
+
+/* .box.login-form-info {
+    margin-bottom: 0;
+
+    & > .component-content {
+        background-color: $blue3;
+        border-top-left-radius: $borderRadius;
+        border-bottom-left-radius: $borderRadius;
+        padding-top: 40px;
+        padding-bottom: 157px;
+        padding-left: 88px - $boxPadding;
+        padding-right: 39px - $boxPadding + $backgroundImageWidth;
+        position: relative;
+        height: $backgroundImageHeight;
+
+        &:after {
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='640' viewBox='0 0 54 640' fill='none'%3E%3Cg clip-path='url(%23clip0_3037_69743)'%3E%3Cpath d='M53.7871 -0.999999L48.403 52.4167C43.019 105.833 32.2508 212.667 28.6502 319.5C25.1842 426.333 28.5493 533.167 30.4674 586.583L32.2508 640L13.9996 640L13.9996 586.583C13.9996 533.167 13.9996 426.333 13.9996 319.5C13.9996 212.667 13.9996 105.833 13.9996 52.4167L13.9996 -0.999999L53.7871 -0.999999Z' fill='%23C62035'/%3E%3Cpath d='M39.5 -1L33.5 52.4167C28.1159 105.833 19.5744 212.667 15.9738 319.5C12.5078 426.333 15.8728 533.167 17.7909 586.583L19.5744 640L-7.62795e-05 640L-8.45459e-05 586.583C-8.51829e-05 533.167 -0.000116852 436.639 -0.000118248 319.5C-0.000119522 212.667 -0.000151314 105.833 -0.000151951 52.4167L-0.000160217 -0.999953L39.5 -1Z' fill='%23273157'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3037_69743'%3E%3Crect width='641' height='54' fill='white' transform='translate(54 -1) rotate(90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+            position: absolute;
+            background-size: cover;
+            right: 0;
+            top: 0;
+            width: 54px;
+            height: 100%;
+        }
+
+        &:before {
+            content: "";
+            background-color: $white-base;
+            width: $backgroundImageWidth;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .richText {
+            margin-bottom: 0;
+
+            &.cq-Editable-dom {
+                background-color: $blue3;
+            }
+        }
+
+        @include breakpoint(tablet) {
+            height: auto;
+            padding-left: 125px;
+            padding-right: 125px;
+            padding-top: 86px;
+            padding-bottom: 0;
+            background-color: $white-base;
+            border-top-right-radius: $borderRadius;
+
+            &:after {
+                content: "";
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='736' height='54' viewBox='0 0 736 54' fill='none'%3E%3Cg clip-path='url(%23clip0_3037_69714)'%3E%3Cpath d='M736 53.7876L674.667 48.4035C613.333 43.0194 490.667 32.2513 368 28.6507C245.333 25.1846 122.667 28.5497 61.3334 30.4677L1.64718e-06 32.2512L-5.7992e-05 14L61.3334 14C122.667 14 245.333 14 368 14C490.667 14 613.333 14 674.667 14L736 14L736 53.7876Z' fill='%23C62035'/%3E%3Cpath d='M736 39.5L674.667 33.5C613.333 28.1159 490.667 19.5743 368 15.9737C245.333 12.5077 122.667 15.8727 61.3334 17.7908L6.25592e-05 19.5743L6.40563e-05 -0.000203245L61.3334 -0.000204746C122.667 -0.000198617 233.5 -0.00021806 368 -0.000204619C490.667 -0.000192362 613.333 -0.000210622 674.667 -0.000204493L736 -0.000205994L736 39.5Z' fill='%23273157'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3037_69714'%3E%3Crect width='736' height='54.0001' fill='white' transform='translate(736 54) rotate(-180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 54px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: bottom;
+                background-position-x: left;
+                border-top-left-radius: $borderRadius;
+                border-top-right-radius: $borderRadius;
+            }
+
+            &:before {
+                display: none;
+            }
+        }
+
+        @include breakpoint(mobile) {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 16px;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul li {
+        color: $white-base;
+
+        @include breakpoint(tablet) {
+            color: $plain-text;
+        }
+    }
+
+    h1 {
+        background-color: $title-background-on-dark;
+        font-size: $font-size-24;
+        line-height: $line-height-32;
+        padding: 2px 8px;
+        display: inline-block;
+        font-family: $font-museo700;
+
+        @include breakpoint(tablet) {
+            background-color: $blue3;
+            color: $white-base;
+        }
+
+        strong {
+            color: $yellow-highlight;
+        }
+    }
+
+    h1 + p {
+        font-size: $font-size-16;
+        font-weight: 400;
+        line-height: $line-height-24;
+        margin-bottom: 16px;
+    }
+
+    p + ul {
+        $paddingLeft: 40px;
+
+        padding-left: $paddingLeft;
+        margin-bottom: 0;
+        list-style: none;
+
+        li {
+            font-size: $font-size-16;
+            font-weight: 400;
+            line-height: $line-height-24;
+            padding-bottom: 16px;
+            position: relative;
+
+            strong {
+                font-size: $font-size-18;
+                line-height: $line-height-24;
+                display: block;
+                font-family: $font-museo700;
+            }
+
+            &:first-of-type {
+                &:before {
+                    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.0505 22.0589C16.5549 21.8132 15.9744 21.8065 15.4732 22.0407L9.07031 25.0326C8.10591 25.4832 7 24.7793 7 23.7148V7.03705C7 5.91202 7.89737 5 9.00433 5L22.9957 5C24.1026 5 25 5.91202 25 7.03705V23.6554C25 24.7345 23.8662 25.4379 22.8994 24.9586L17.0505 22.0589Z' fill='%23FFDA2C' stroke='%23273157' stroke-width='1.5'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.4769 16.1333L20.1384 10L21 10.9334L14.4769 18L11 14.2333L11.8616 13.3L14.4769 16.1333Z' fill='%23665711'/%3E%3C/svg%3E");
+                    position: absolute;
+                    left: -$paddingLeft;
+                    top: 0;
+                }
+            }
+
+            &:nth-of-type(2) {
+                &:before {
+                    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.6704 13.9474L13.2207 18.9101C12.9064 19.0951 12.5035 18.9855 12.3217 18.6647L9.08838 12.9679C8.90657 12.6471 9.01431 12.2373 9.32855 12.0523L17.7783 7.08962C18.0936 6.90467 18.4965 7.01541 18.6783 7.33507L21.9117 13.0318C22.0935 13.3526 21.9857 13.7625 21.6704 13.9474Z' fill='%23FFDA2C'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.5458 7.35764C18.5458 7.35766 18.5459 7.35763 18.5458 7.35764L10.2524 12.5872C10.2524 12.5872 10.2524 12.5872 10.2524 12.5872C10.2406 12.5947 10.235 12.6129 10.2432 12.6283L13.4168 18.6316C13.4243 18.6458 13.4406 18.6502 13.4523 18.6429L21.747 13.4125C21.7593 13.4047 21.7648 13.3868 21.7569 13.3718C21.7569 13.3717 21.7569 13.3718 21.7569 13.3718L18.5835 7.36893C18.5835 7.36889 18.5835 7.36897 18.5835 7.36893C18.5812 7.36454 18.5788 7.36194 18.5766 7.36012C18.574 7.358 18.5706 7.35604 18.5664 7.35483C18.5623 7.35362 18.5586 7.35345 18.5556 7.35385C18.553 7.35419 18.5499 7.35507 18.5458 7.35764ZM17.9269 6.18505C18.5335 5.80311 19.3071 6.03203 19.6562 6.69111L22.8303 12.6953C23.1793 13.3563 22.9732 14.2025 22.3667 14.5847C22.3666 14.5848 22.3668 14.5846 22.3667 14.5847L14.0729 19.8144C13.4677 20.1965 12.6927 19.9697 12.3433 19.308L9.1697 13.3047C8.82092 12.644 9.02668 11.798 9.63177 11.4156L17.9269 6.18505Z' fill='%23273157'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.58433 25C5.7105 25 5 24.2539 5 23.3376V11.6637C5 10.7461 5.7105 10 6.58433 10H24.4168C25.2895 10 26 10.7461 26 11.6637V23.3376C26 24.2539 25.2895 25 24.4168 25H6.58433Z' fill='%23FFDA2C'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.30961 11.3464C5.78245 11.3464 5.35292 11.7738 5.35292 12.2984V23.7028C5.35292 24.2258 5.78212 24.6536 6.30961 24.6536H24.6916C25.2176 24.6536 25.6471 24.2262 25.6471 23.7028V12.2984C25.6471 11.7735 25.2172 11.3464 24.6916 11.3464H6.30961ZM4 12.2984C4 11.0302 5.03525 10 6.30961 10H24.6916C25.9651 10 27 11.0306 27 12.2984V23.7028C27 24.9698 25.9647 26 24.6916 26H6.30961C5.03558 26 4 24.9701 4 23.7028V12.2984Z' fill='%23273157'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.4625 21C21.6558 21 21 20.3667 21 19.5878V17.4122C21 16.6333 21.6558 16 22.4625 16H26.5386C27.3442 16 28 16.6333 28 17.4122V19.5878C28 20.3667 27.3442 21 26.5386 21H22.4625Z' fill='%23FFDA2C'/%3E%3Cpath d='M20 15.8078C20 14.8094 20.8059 14 21.8001 14H27.1999C28.1941 14 29 14.8094 29 15.8078V19.1922C29 20.1906 28.1941 21 27.1999 21H21.8001C20.8059 21 20 20.1906 20 19.1922V15.8078Z' fill='%23FFDA2C'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20 16.3799C20 15.0655 21.0707 14 22.3914 14H27.6086C28.9293 14 30 15.0655 30 16.3799V19.6201C30 20.9345 28.9293 22 27.6086 22H22.3914C21.0707 22 20 20.9345 20 19.6201V16.3799ZM22.3914 15.2981C21.791 15.2981 21.3044 15.7824 21.3044 16.3799V19.6201C21.3044 20.2176 21.791 20.7019 22.3914 20.7019H27.6086C28.209 20.7019 28.6956 20.2176 28.6956 19.6201V16.3799C28.6956 15.7824 28.209 15.2981 27.6086 15.2981H22.3914Z' fill='%23273157'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25 18.5C25 18.776 24.776 19 24.5 19C24.224 19 24 18.776 24 18.5C24 18.224 24.224 18 24.5 18C24.776 18 25 18.224 25 18.5Z' fill='%23273157'/%3E%3C/svg%3E");
+                    position: absolute;
+                    left: -$paddingLeft;
+                    top: 0;
+                }
+            }
+
+            &:last-of-type {
+                &:before {
+                    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M26.5727 8.90493C26.3375 8.90493 26.1464 9.09184 26.1464 9.32155C26.1464 10.0581 25.8064 10.7172 25.2725 11.1613C23.4365 8.77077 20.3133 7.19654 16.7682 7.19654C14.9708 7.19654 13.2857 7.60473 11.819 8.31606C10.7281 7.30667 9.2941 6.49736 7.79624 6.01294C7.69031 5.97895 7.57447 6.01341 7.50546 6.0989C7.43764 6.18519 7.43135 6.30281 7.49048 6.39496C8.22351 7.52464 8.74531 8.85864 9.07296 10.2608C8.52745 10.8069 8.05335 11.4086 7.67047 12.059C7.29542 12.6983 6.59573 13.0943 5.84138 13.0943C5.37658 13.0943 5 13.4623 5 13.9164V18.3373C5 18.7908 5.37658 19.1583 5.84138 19.1583C6.59664 19.1583 7.29485 19.5536 7.67047 20.1946C8.35314 21.3577 9.32296 22.369 10.4928 23.167L11.0321 25.669C11.0743 25.8623 11.2481 26 11.4496 26H13.9267C14.1625 26 14.354 25.8137 14.354 25.5828V24.8007C15.1277 24.9647 15.9349 25.0567 16.7682 25.0567C17.6002 25.0567 18.4083 24.9676 19.1835 24.8036V25.5828C19.1835 25.8137 19.3744 26 19.6096 26H22.0863C22.2885 26 22.4632 25.8623 22.504 25.669L23.0411 23.1787C25.4488 21.5452 27 18.9942 27 16.1259C27 14.5786 26.5481 13.1224 25.7536 11.8539C26.5127 11.2569 27 10.3446 27 9.32155C27 9.09184 26.8089 8.90493 26.5727 8.90493Z' fill='%23FFDA2C' stroke='%23273157' stroke-width='1.5'/%3E%3C/svg%3E");
+                    position: absolute;
+                    left: -$paddingLeft;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    ul + ul {
+        $paddingLeft: 32px;
+
+        padding-left: $paddingLeft;
+        list-style: none;
+
+        li {
+            font-size: $font-size-14;
+            font-weight: 500;
+            line-height: $line-height-20;
+            padding-bottom: 16px;
+            position: relative;
+
+            &:before {
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4.96948 15.6821L5.12783 15.9641C5.84693 17.1877 6.81228 18.153 8.03583 18.8721L8.31785 19.0305C9.34995 19.5832 10.4539 19.8844 11.6413 19.9346L12 19.9421C13.435 19.9421 14.7499 19.5858 15.9641 18.8721C17.1877 18.153 18.1531 17.1877 18.8721 15.9641L19.0305 15.6821C19.6386 14.5468 19.9421 13.3246 19.9421 12C19.9421 10.565 19.5859 9.25015 18.8721 8.03581C18.1531 6.81228 17.1877 5.84692 15.9641 5.12783C14.7499 4.41414 13.435 4.05788 12 4.05788C10.565 4.05788 9.25017 4.41414 8.03583 5.12783L7.73531 5.31274C6.6531 6.00961 5.787 6.91424 5.12783 8.03581C4.41414 9.25015 4.05788 10.565 4.05788 12C4.05788 13.3246 4.36144 14.5468 4.96948 15.6821ZM13.2 15.6V18H10.8V15.6H13.2ZM13.2 6L13 14.8H10.9818L10.8 6H13.2ZM6.99312 20.6463L6.67092 20.4493C5.29522 19.5742 4.18629 18.4235 3.35368 17.0069C2.45162 15.472 2 13.7965 2 12C2 10.2035 2.45162 8.52796 3.35368 6.99311C4.25033 5.46745 5.46746 4.25033 6.99312 3.35367L7.32416 3.16727C8.76795 2.3894 10.3318 2 12 2C13.7965 2 15.472 2.45161 17.0069 3.35367C18.4236 4.18628 19.5743 5.29521 20.4493 6.67091L20.6463 6.99311C21.5484 8.52796 22 10.2035 22 12C22 13.7965 21.5484 15.472 20.6463 17.0069L20.4493 17.3291C19.5743 18.7047 18.4236 19.8137 17.0069 20.6463C15.472 21.5483 13.7965 22 12 22C10.2035 22 8.52797 21.5483 6.99312 20.6463Z' fill='white'/%3E%3C/svg%3E");
+                position: absolute;
+                left: -$paddingLeft;
+                top: 0;
+            }
+
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+
+            @include breakpoint(tablet) {
+                &:before {
+                    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4.96948 15.6821L5.12783 15.9641C5.84693 17.1877 6.81228 18.153 8.03583 18.8721L8.31785 19.0305C9.34995 19.5832 10.4539 19.8844 11.6413 19.9346L12 19.9421C13.435 19.9421 14.7499 19.5858 15.9641 18.8721C17.1877 18.153 18.1531 17.1877 18.8721 15.9641L19.0305 15.6821C19.6386 14.5468 19.9421 13.3246 19.9421 12C19.9421 10.565 19.5859 9.25015 18.8721 8.03581C18.1531 6.81228 17.1877 5.84692 15.9641 5.12783C14.7499 4.41414 13.435 4.05788 12 4.05788C10.565 4.05788 9.25017 4.41414 8.03583 5.12783L7.73531 5.31274C6.6531 6.00961 5.787 6.91424 5.12783 8.03581C4.41414 9.25015 4.05788 10.565 4.05788 12C4.05788 13.3246 4.36144 14.5468 4.96948 15.6821ZM13.2 15.6V18H10.8V15.6H13.2ZM13.2 6L13 14.8H10.9818L10.8 6H13.2ZM6.99312 20.6463L6.67092 20.4493C5.29522 19.5742 4.18629 18.4235 3.35368 17.0069C2.45162 15.472 2 13.7965 2 12C2 10.2035 2.45162 8.52796 3.35368 6.99311C4.25033 5.46745 5.46746 4.25033 6.99312 3.35367L7.32416 3.16727C8.76795 2.3894 10.3318 2 12 2C13.7965 2 15.472 2.45161 17.0069 3.35367C18.4236 4.18628 19.5743 5.29521 20.4493 6.67091L20.6463 6.99311C21.5484 8.52796 22 10.2035 22 12C22 13.7965 21.5484 15.472 20.6463 17.0069L20.4493 17.3291C19.5743 18.7047 18.4236 19.8137 17.0069 20.6463C15.472 21.5483 13.7965 22 12 22C10.2035 22 8.52797 21.5483 6.99312 20.6463Z' fill='%23214EA3'/%3E%3C/svg%3E");
+                }
+            }
+        }
+    }
+} */
+
+/* form in overlay */
+/* 
+$widthModal: 894px;
+$widthModalTablet: 560px;
+$widthModalMobile: 375px; */
+
+/* .login-overlay-container {
+    &.overlay-container {
+        padding: 16px;
+        max-height: calc(100vh - 32px);
+        align-items: center;
+        justify-content: center;
+
+        @include breakpoint(mobile) {
+            max-width: $widthModalMobile;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
+
+        .overlay-content {
+            &.lightbox--default-size,
+            &.lightbox--full-content-size {
+                width: $widthModal;
+
+                @include breakpoint(tablet) {
+                    width: $widthModalTablet;
+                }
+
+                @include breakpoint(mobile) {
+                    width: 100%;
+                    max-width: $widthModalMobile;
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+
+    .lightbox--default-size,
+    .lightbox--full-content-size {
+        .overlay-content-inner {
+            margin: 0;
+            height: auto;
+            border-radius: $borderRadius;
+            max-height: calc(100vh - 32px);
+
+            & > div > div {
+                @include breakpoint(mobile) {
+                    padding-bottom: 0;
+                }
+
+                & > .last {
+                    @include breakpoint(mobile) {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .overlay-close {
+        background: transparent;
+
+        &:before {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Ccircle cx='12' cy='12' r='12' fill='%239197AF'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0039 13.4144L7.71088 17.7073L6.29688 16.293L10.5899 12.0002L6.29688 7.70727L7.71088 6.29297L12.0039 10.5859L16.2969 6.29297L17.7109 7.70727L13.4179 12.0002L17.7109 16.293L16.2969 17.7073L12.0039 13.4144Z' fill='white'/%3E%3C/svg%3E");
+            width: 24px;
+            height: 24px;
+            margin-right: 0;
+            right: 8px;
+            top: 0;
+            transform: none;
+            background: none;
+        }
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .overlay-content {
+        border-radius: $borderRadius;
+
+        @include breakpoint(mobile) {
+            height: 100%;
+            width: 100% !important;
+        }
+
+        &.lightbox--default-size {
+            height: auto;
+        }
+    }
+
+    .box {
+        &.login-form-info {
+            & > .component-content {
+                background-color: $white-base;
+                padding: 40px;
+                height: auto;
+
+                &::before,
+                &::after {
+                    display: none;
+                }
+
+                @include breakpoint(tablet) {
+                    padding: 16px 40px;
+                }
+
+                @include breakpoint(mobile) {
+                    padding: 16px;
+                }
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            ul li {
+                color: $plain-text;
+            }
+
+            ul li {
+                strong {
+                    color: $blue3;
+                }
+            }
+
+            ul + ul li {
+                &::before {
+                    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4.96948 15.6821L5.12783 15.9641C5.84693 17.1877 6.81228 18.153 8.03583 18.8721L8.31785 19.0305C9.34995 19.5832 10.4539 19.8844 11.6413 19.9346L12 19.9421C13.435 19.9421 14.7499 19.5858 15.9641 18.8721C17.1877 18.153 18.1531 17.1877 18.8721 15.9641L19.0305 15.6821C19.6386 14.5468 19.9421 13.3246 19.9421 12C19.9421 10.565 19.5859 9.25015 18.8721 8.03581C18.1531 6.81228 17.1877 5.84692 15.9641 5.12783C14.7499 4.41414 13.435 4.05788 12 4.05788C10.565 4.05788 9.25017 4.41414 8.03583 5.12783L7.73531 5.31274C6.6531 6.00961 5.787 6.91424 5.12783 8.03581C4.41414 9.25015 4.05788 10.565 4.05788 12C4.05788 13.3246 4.36144 14.5468 4.96948 15.6821ZM13.2 15.6V18H10.8V15.6H13.2ZM13.2 6L13 14.8H10.9818L10.8 6H13.2ZM6.99312 20.6463L6.67092 20.4493C5.29522 19.5742 4.18629 18.4235 3.35368 17.0069C2.45162 15.472 2 13.7965 2 12C2 10.2035 2.45162 8.52796 3.35368 6.99311C4.25033 5.46745 5.46746 4.25033 6.99312 3.35367L7.32416 3.16727C8.76795 2.3894 10.3318 2 12 2C13.7965 2 15.472 2.45161 17.0069 3.35367C18.4236 4.18628 19.5743 5.29521 20.4493 6.67091L20.6463 6.99311C21.5484 8.52796 22 10.2035 22 12C22 13.7965 21.5484 15.472 20.6463 17.0069L20.4493 17.3291C19.5743 18.7047 18.4236 19.8137 17.0069 20.6463C15.472 21.5483 13.7965 22 12 22C10.2035 22 8.52797 21.5483 6.99312 20.6463Z' fill='%23214EA3'/%3E%3C/svg%3E");
+                }
+            }
+
+            p + ul li strong {
+                font-size: 17px;
+            }
+
+            p + ul li:last-of-type {
+                padding-bottom: 12px;
+            }
+
+            h1 {
+                background-color: transparent;
+                font-size: 20px;
+                line-height: 28px;
+                padding: 0;
+                margin-bottom: 24px;
+                color: $blue3;
+            }
+
+            h1 + p {
+                margin-bottom: 20px;
+
+                strong {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &.login-form {
+            & > .component-content {
+                padding: 30px 40px;
+                height: auto;
+
+                @include breakpoint(tablet) {
+                    padding: 16px 40px 0 40px;
+                }
+
+                @include breakpoint(mobile) {
+                    padding: 8px 16px 0 16px;
+                }
+            }
+
+            .login-form-info {
+                & > .component-content {
+                    padding: 0;
+                }
+            }
+        }
+
+        &.login-form-container {
+            & > .component-content {
+                height: auto;
+
+                &:has(.richText.last.visible-info) {
+                    height: auto;
+
+                    .box.login-form-info,
+                    .box.login-form {
+                        & > .component-content {
+                            height: auto;
+                        }
+                    }
+                }
+
+                & > .content {
+                    @include breakpoint(tablet) {
+                        display: grid;
+                        grid-template-rows: auto auto;
+                    }
+
+                    & > .login-form {
+                        @include breakpoint(tablet) {
+                            grid-row: 1;
+                        }
+                    }
+
+                    & > .login-form-info {
+                        @include breakpoint(tablet) {
+                            grid-row: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    [data-amplify-authenticator] {
+        @include breakpoint(tablet) {
+            padding: 0;
+        }
+
+        [data-amplify-form] {
+            padding: 16px;
+        }
+    }
+
+    .auth {
+        width: 100%;
+        float: left;
+
+        @include breakpoint(tablet) {
+            padding: 0 8px;
+        }
+
+        @include breakpoint(mobile) {
+            padding: 0;
+        }
+    }
+} */
