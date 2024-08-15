@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'museo_slab700';
-    src: url('https://www.moneysavingexpert.com/etc/designs/zg/mse/desktop/assets/fonts/mse/Museo_Slab_700-webfont.woff2') format('woff2'),
-        url('https://www.moneysavingexpert.com/etc/designs/zg/mse/desktop/assets/fonts/mse/Museo_Slab_700-webfont.woff2') format('woff');
+    src: url('Museo_Slab_700-webfont.woff2') format('woff2'),
+        url('Museo_Slab_700-webfont.woff2') format('woff');
 }
 
 body {
