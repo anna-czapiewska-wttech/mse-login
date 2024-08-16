@@ -136,7 +136,7 @@ a:hover {
 
     @media screen and (max-width: 767px) {
         border-top-right-radius: 8px;
-        padding: 8px 40px 0 40px;
+        padding: 8px 40px 16px 40px;
     }
 
     @media screen and (max-width: 374px) {
