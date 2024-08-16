@@ -59,6 +59,8 @@ a:hover {
 
     @media screen and (max-width: 767px) {
         grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 }
 
@@ -68,6 +70,8 @@ a:hover {
 
     @media screen and (max-width: 767px) {
         grid-row: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
     }
 }
 
@@ -170,11 +174,6 @@ a:hover {
         padding: 0;
         margin: 0 0 24px;
         color: #273157;
-
-        @media screen and (max-width: 767px) {
-            background-color: #273157;
-            color: #fff;
-        }
 
         strong {
             color: #ffda2c;
