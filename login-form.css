@@ -115,16 +115,15 @@ a:hover {
             padding: 16px;
         }
     }
-}
 
-.box.login-form-info {
-    .richText {
-        display: none;
-        /* hide richText before react app init */
-    }
-
-    .richText.visible-info {
-        display: initial;
+    .box.login-form-info>.component-content {
+        @media screen and (max-width: 767px) {
+            padding: 0;
+        }
+    
+        @media screen and (max-width: 374px) {
+            padding: 0;
+        }
     }
 }
 
@@ -137,10 +136,22 @@ a:hover {
 
     @media screen and (max-width: 767px) {
         border-top-right-radius: 8px;
+        padding: 8px 40px 0 40px;
     }
 
     @media screen and (max-width: 374px) {
         padding: 8px 16px 0 16px;
+    }
+}
+
+.box.login-form-info {
+    .richText {
+        display: none;
+        /* hide richText before react app init */
+    }
+
+    .richText.visible-info {
+        display: initial;
     }
 }
 
