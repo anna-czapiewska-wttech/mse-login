@@ -120,7 +120,7 @@ a:hover {
         @media screen and (max-width: 767px) {
             padding: 0;
         }
-    
+
         @media screen and (max-width: 374px) {
             padding: 0;
         }
@@ -140,7 +140,7 @@ a:hover {
     }
 
     @media screen and (max-width: 374px) {
-        padding: 8px 16px 0 16px;
+        padding: 8px 16px 16px 16px;
     }
 }
 
@@ -213,6 +213,16 @@ a:hover {
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
+        }
+    }
+
+    p:has(+ ul) {
+        @media screen and (max-width: 767px) {
+            margin: 0 0 12px 0;
+        }
+
+        @media screen and (max-width: 374px) {
+            margin: 0 0 12px 0;
         }
     }
 
