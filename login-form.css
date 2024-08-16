@@ -10,13 +10,13 @@ body {
 }
 
 .box.hide-on-mobile-and-tablet {
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 }
 
 .box.hide-on-desktop {
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
@@ -35,11 +35,11 @@ a:hover {
     width: 100%;
     float: left;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 767px) {
         padding: 0 8px;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 374px) {
         padding: 0;
     }
 }
@@ -48,7 +48,7 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 767px) {
         grid-template-rows: auto auto;
     }
 }
@@ -57,7 +57,7 @@ a:hover {
     grid-column-start: 2;
     grid-column-end: 3;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 767px) {
         grid-row: 1;
     }
 }
@@ -66,7 +66,7 @@ a:hover {
     grid-column-start: 1;
     grid-column-end: 2;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 767px) {
         grid-row: 2;
     }
 }
@@ -75,18 +75,18 @@ a:hover {
 .box.login-form>.component-content {
     padding: 30px 40px;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 767px) {
         padding: 16px 40px 0 40px;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 374px) {
         padding: 8px 16px 0 16px;
     }
 }
 
 .box.login-form {
     .loginComponent {
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 6px;
         }
     }
@@ -95,13 +95,13 @@ a:hover {
         width: 100%;
         max-width: none;
 
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 6px;
         }
     }
 
     [data-amplify-authenticator] {
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 767px) {
             padding: 0;
         }
 
@@ -129,12 +129,12 @@ a:hover {
     border-bottom-left-radius: 8px;
     position: relative;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 767px) {
         border-top-right-radius: 8px;
         padding: 16px 40px 0 40px;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 374px) {
         padding: 8px 16px 0 16px;
     }
 }
@@ -172,7 +172,7 @@ a:hover {
         margin: 0 0 24px;
         color: #273157;
 
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 767px) {
             background-color: #273157;
             color: #fff;
         }
