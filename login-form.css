@@ -191,6 +191,10 @@ a:hover {
         strong {
             color: #ffda2c;
         }
+
+        @media screen and (max-width: 374px) {
+            padding-right: 30px;
+        }
     }
 
     p {
