@@ -161,8 +161,7 @@ a:hover {
     }
 
     h1 {
-        font-weight: 400;
-        letter-spacing: -1px;
+        font-weight: 600;
         display: inline-block;
         font-family: 'museo_slab700';
         background-color: transparent;
@@ -194,7 +193,14 @@ a:hover {
         margin: 0 0 20px;
 
         strong {
+            font-weight: 700;
+        }
+
+        a {
+            color: #214EA3;
+            font-size: 16px;
             font-weight: 500;
+            line-height: 24px;
         }
     }
 
@@ -218,6 +224,8 @@ a:hover {
                 line-height: 24px;
                 display: block;
                 font-family: 'museo_slab700';
+                letter-spacing: -0.05px;
+                font-weight: 600;
             }
         }
 
@@ -258,6 +266,10 @@ a:hover {
             line-height: 20px;
             padding-bottom: 16px;
             position: relative;
+            color: #273157;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
 
             a {
                 font-size: 14px;
