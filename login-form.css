@@ -155,6 +155,10 @@ a:hover {
     }
 }
 
+[data-amplify-form][data-amplify-authenticator-custom] .amplify-button--link {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .box.login-form-info {
 
     h1,
